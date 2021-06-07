@@ -1,0 +1,41 @@
+
+.center-screen {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+  }
+
+.episodeTemplate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 700px;
+    height: fit-content;
+    border-style: solid;
+    border-color: indianred;
+    border-width: medium;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.showInfoContainer{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.player{
+    height: 50px;
+    width: 300px;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
