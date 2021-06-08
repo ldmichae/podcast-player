@@ -66,8 +66,6 @@ body{
 }
 
 .player{
-    height: 50px;
-    width: 450px;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
