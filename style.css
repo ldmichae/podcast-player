@@ -92,3 +92,14 @@ body{
     padding-bottom: 10px;
     padding-left: 10px;
 }
+
+@media (min-width:320px) {
+    .center-screen {
+        position: absolute;
+        width: 100%;
+        background-color: rgb(245, 133, 68);
+        border-style: solid;
+        border-color: rgb(194, 104, 51);
+        z-index: 0;
+      }
+}
