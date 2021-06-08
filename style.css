@@ -4,7 +4,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
 }
 
 .header{
@@ -31,9 +31,10 @@ body{
 .center-screen {
     position: absolute;
     top: 60px;
-    width: 50%;
+    width: 60%;
+    margin-left: 20%;
     padding-left: 16px;
-    padding-right: 20px;
+    padding-right: 16px;
     background-color: rgb(245, 133, 68);
     border-style: solid;
     border-color: rgb(194, 104, 51);
@@ -44,7 +45,7 @@ body{
 .episodeTemplate{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     height: fit-content;
     border-style: solid;
@@ -68,6 +69,7 @@ body{
 }
 
 .player{
+    width: 500px;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -84,7 +86,7 @@ body{
 .lowerEpisodeContainer{
     display: flex;
     flex-direction: column;
-    width: inherit;
+    width: 88%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: rgb(53, 52, 52);
@@ -93,13 +95,23 @@ body{
     padding-left: 10px;
 }
 
-@media only screen and (max-width:500px) {
-    .center-screen {
-        position: absolute;
-        width: 100%;
-        background-color: rgb(245, 133, 68);
-        border-style: solid;
-        border-color: rgb(194, 104, 51);
-        z-index: 0;
-      }
+.sidebar{
+    display: flex;
+    flex-direction: row;
+    
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(172, 172, 172);
+    
+}
+
+.sidebarInner{
+    padding-top: 10px;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
 }
