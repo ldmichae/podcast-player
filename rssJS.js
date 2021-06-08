@@ -45,16 +45,20 @@ function populatePodcasts(RSS_URL){
         let currentShow = null
         let direction = "forward"
         $("#showOne").click(function(){
-            direction = "forward";
-            $("#podcastList").empty();
-            populatePodcasts(RSS_URL1);
-            currentShow = RSS_URL1
+            if (currentShow != RSS_URL1){
+                direction = "forward";
+                $("#podcastList").empty();
+                populatePodcasts(RSS_URL1);
+                currentShow = RSS_URL1
+            };
         });
         $("#showTwo").click(function(){
-            direction = "forward";
-            $("#podcastList").empty();
-            populatePodcasts(RSS_URL2);
-            currentShow= RSS_URL2
+            if (currentShow != RSS_URL2){
+                direction = "forward";
+                $("#podcastList").empty();
+                populatePodcasts(RSS_URL2);
+                currentShow= RSS_URL2
+            }
         })
 
         $.fn.reverseChildren = function() {
