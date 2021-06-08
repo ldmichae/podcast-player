@@ -3,7 +3,7 @@ body{
     background-color: rgb(48, 48, 48);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items:center;
 }
 
@@ -22,22 +22,32 @@ body{
     z-index: 1;
 }
 
+.blur-box {
+    background-color: cadetblue;
+    box-shadow: 0 0 2px 2px cadetblue;
+}
+
 .innerHeader{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
-    color: black;
+    color: rgb(38, 41, 48);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .center-screen {
-    position: absolute;
+    position:relative;
     top: 60px;
-    width: 60%;
-    margin-left: 20%;
+    width: fit-content;
+    max-width: 50%;
+    min-width: 20%;
     padding-left: 16px;
     padding-right: 16px;
     background-color: rgb(245, 133, 68);
     border-style: solid;
     border-color: rgb(194, 104, 51);
+    border-radius: 10px;
     z-index: 0;
   }
 
@@ -50,6 +60,7 @@ body{
     height: fit-content;
     border-style: solid;
     border-color: indianred;
+    border-radius: 25px;
     background-color: ivory;
     border-width: medium;
     margin-top: 20px;
@@ -98,20 +109,28 @@ body{
 .sidebar{
     display: flex;
     flex-direction: row;
-    
     position: fixed;
     left: 0;
     top: 60px;
-    width: 20%;
+    width: fit-content;
+    max-width: 15%;
+    min-width: fit-content;
     height: 100%;
-    background-color: rgb(172, 172, 172);
-    
+    background-color: rgb(41, 40, 39);
+    border-radius: 10px;
 }
 
 .sidebarInner{
-    padding-top: 10px;
-    padding-left: 5px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    color: black;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.showSelector:hover{
+    color:aqua;
+    cursor: default;
 }
