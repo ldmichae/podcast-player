@@ -1,5 +1,7 @@
 const RSS_URL1 = 'https://feeds.megaphone.fm/darknetdiaries'
 const RSS_URL2 = 'https://www.omnycontent.com/d/playlist/9b7dacdf-a925-4f95-84dc-ac46003451ff/662ff2d4-9b7f-4388-8a94-acb8002fd595/480aa1a5-4ada-4846-ae18-acb8002fd59e/podcast.rss'
+const RSS_URL3 = 'https://feed.desiringgod.org/ask-pastor-john.rss'
+
 
 function populatePodcasts(RSS_URL){
     fetch(RSS_URL)
@@ -58,6 +60,15 @@ function populatePodcasts(RSS_URL){
                 $("#podcastList").empty();
                 populatePodcasts(RSS_URL2);
                 currentShow= RSS_URL2
+            }
+        })
+
+        $("showThree").click(function(){
+            if(currentShow != RSS_URL3){
+                direction = "forward";
+                $("#podcastList").empty();
+                populatePodcasts(RSS_URL3);
+                currentShow = RSS_URL3
             }
         })
 
